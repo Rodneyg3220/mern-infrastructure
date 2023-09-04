@@ -15,4 +15,5 @@ router.get('/check-token', usersCtrl.checkToken);
 // Insert ensureLoggedIn on all routes that need protecting
 router.get('/check-token', ensureLoggedIn, usersCtrl.checkToken);
 
+
 module.exports = router;
